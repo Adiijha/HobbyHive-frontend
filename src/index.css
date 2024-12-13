@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: 'BNT';
+    src: url("./assets/fonts/big_noodle_titling.ttf") format('truetype');
+}
+
+@font-face{
+    font-family : 'Monigue';
+    src: url("./assets/fonts/Monigue.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Awesome';
+    src: url("./assets/fonts/AwesomeSerif-Regular.otf") format('opentype');
+}
