@@ -16,3 +16,44 @@
     font-family: 'Awesome';
     src: url("./assets/fonts/AwesomeSerif-Regular.otf") format('opentype');
 }
+
+.no-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  
+  body {
+    overflow-x: hidden;
+  }
+  /* Style for the link */
+.group {
+  position: relative;
+  display: inline-block;
+  color: #000; /* Adjust text color */
+  text-decoration: none;
+  padding-bottom: 5px; /* Space for the line */
+}
+
+/* Underline animation on hover */
+.group::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Line thickness */
+  background-color: black; /* Line color */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease; /* Smooth animation */
+}
+
+/* On hover, expand the line */
+.group:hover::after {
+  width: 100%;
+}
+
+  

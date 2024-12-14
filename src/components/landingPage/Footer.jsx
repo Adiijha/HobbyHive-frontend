@@ -2,13 +2,13 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="w-full bg-mutel text-white py-6 font-bnt">
+    <footer className="w-full bg-somig text-black py-6 font-awe border-t-2 border-chgrey">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between pl-20">
           {/* Column 1 */}
           <div className="w-full sm:w-1/3 mb-4 sm:mb-0">
             <h2 className="text-3xl font-bold mb-2">About Us</h2>
-            <p className="text-lg">
+            <p className="text-lg w-2/3">
               We are a company dedicated to providing excellent services and products. Our goal is to exceed your expectations.
             </p>
           </div>
@@ -36,7 +36,7 @@ function Footer() {
         </div>
 
         <div className="text-center mt-6 border-t border-gray-700 pt-4">
-          <p className="text-xs">&copy; {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
+          <p className="text-lg">&copy; {new Date().getFullYear()} Your Company. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -10,6 +10,7 @@ export default {
         'bnt': ['BNT', 'big-noodle-titling'],
         'mon' : ['Monigue', 'monigue'],
         'awe' : ['Awesome', 'awesome'],
+        'mons' : ['Montserrat', 'montserrat'],
       },
       colors:{
         'somig':'#ADE8E6',
@@ -22,7 +23,21 @@ export default {
         'chblack':'#212529',
         'mugrbl':'#343A40',
 
-      }
+      },
+      keyframes: {
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        slideInLeft: 'slideInLeft 2s ease-out',
+        slideInRight: 'slideInRight 2s ease-out',
+      },
     },
   },
   plugins: [],
