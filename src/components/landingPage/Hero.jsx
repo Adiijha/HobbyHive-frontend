@@ -11,7 +11,7 @@ function Hero() {
   return (
     <div className=" w-full h-auto bg-gradient-to-r from-somig to-beige pt-12 md:pt-28 px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col items-center text-center">
       {/* Hero Content Section */}
-      <motion.div className="w-full max-h-[70vh] md:min-h-screen text-black border-b-2 border-chgrey flex flex-col items-center">
+      <motion.div className="w-full min-h-[70vh] md:max-h-screen lg:min-h-screen text-black border-b-2 border-chgrey flex flex-col items-center">
         {/* Animated Heading */}
         <motion.h1
           className="font-bnt text-black font-semibold text-6xl md:text-7xl lg:text-8xl bg-gradient-to-b from-gray-500 to-gray-900 bg-clip-text text-transparent"
