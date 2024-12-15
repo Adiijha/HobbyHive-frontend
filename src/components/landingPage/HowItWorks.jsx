@@ -10,7 +10,7 @@ function HowItWorks() {
   return (
     <>
       <motion.div
-        className=" w-full min-h-screen font-bnt py-10 md:p-10 border-b-2 border-chgrey"
+        className=" w-full h-auto lg:[height:1500px] font-bnt py-10 md:p-10 border-b-2 border-chgrey"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
