@@ -4,13 +4,13 @@ import { motion } from 'framer-motion';
 function Newsletter() {
   return (
     <motion.div
-      className="w-full h-full rounded-3xl flex justify-center items-center"
+      className="w-full [height:550px] rounded-3xl flex justify-center items-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}  // Trigger animation when in view
       transition={{ duration: 0.6, ease: 'easeOut' }}
       viewport={{ once: false }}  // Allows animation to trigger every time it comes into view
     >
-      <div className="py-12 sm:py-16 lg:py-12 w-full max-w-7xl flex flex-col items-center">
+      <div className="py-12 sm:py-16 lg:py-12 w-full max-w-7xl flex flex-col items-center border-somig border-4 rounded-3xl">
         {/* Title Section */}
         <motion.div
           className="font-bnt text-5xl sm:text-6xl lg:text-7xl text-center pb-4"

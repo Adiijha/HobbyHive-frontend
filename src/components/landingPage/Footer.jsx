@@ -1,6 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -38,22 +37,22 @@ function Footer() {
             <div className="flex justify-start gap-4 mt-6 sm:mt-0">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <button className="w-10 h-10 sm:w-12 sm:h-12 bg-somig text-black border-2 border-chgrey hover:text-white rounded-full flex items-center justify-center hover:bg-blue-600 hover:border-0 transition duration-300">
-                  <FaFacebook size={20} className="sm:size-24" />
+                  <FaFacebook size="1.5rem" />
                 </button>
               </a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <button className="w-10 h-10 sm:w-12 sm:h-12 bg-somig text-black border-2 border-chgrey hover:text-white rounded-full flex items-center justify-center hover:bg-black hover:border-0 transition duration-300">
-                  <FaXTwitter size={20} className="sm:size-24" />
+                  <FaTwitter size="1.5rem" />
                 </button>
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                 <button className="w-10 h-10 sm:w-12 sm:h-12 bg-somig text-black border-2 border-chgrey hover:text-white rounded-full flex items-center justify-center hover:bg-pink-600 hover:border-0 transition duration-300">
-                  <FaInstagram size={20} className="sm:size-24" />
+                  <FaInstagram size="1.5rem" />
                 </button>
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <button className="w-10 h-10 sm:w-12 sm:h-12 bg-somig text-black border-2 border-chgrey hover:text-white rounded-full flex items-center justify-center hover:bg-blue-700 hover:border-0 transition duration-300">
-                  <FaLinkedin size={20} className="sm:size-24" />
+                  <FaLinkedin size="1.5rem" />
                 </button>
               </a>
             </div>

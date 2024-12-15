@@ -5,6 +5,7 @@ import About from './About';
 import Banner from './Banner';
 import Featured from './Featured';
 import HowItWorks from './HowItWorks';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -52,7 +53,7 @@ function Hero() {
             whileHover={{ scale: 1.1, backgroundColor: "#3B3B3B" }}
             whileTap={{ scale: 0.95 }}
           >
-            Join Now
+            <Link to="/signup">Join Now</Link>
           </motion.button>
 
           {/* Explore Communities Button */}
