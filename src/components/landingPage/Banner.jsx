@@ -28,23 +28,26 @@ function Banner() {
   return (
     <div
       ref={sectionRef}
-      className="w-full h-auto mt-7 p-10 border-b-2 border-chgrey"
+      className="w-full h-auto mt-7 px-4 md:px-10 py-4 md:py-10 border-b-2 border-chgrey"
     >
+      {/* Heading Section */}
       <motion.div
-        className="text-5xl font-quick font-bold"
+        className="text-5xl md:text-7xl font-bnt text-center md:text-center mb-1 md:mb-3"
         variants={titleVariants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
       >
         WHY CHOOSE HOBBYHIVE?
       </motion.div>
-      
+
+      {/* Cards Section */}
       <motion.div
-        className="flex gap-20"
+        className="flex flex-col md:flex-row gap-8 md:gap-20"
         variants={cardContainerVariants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
       >
+        {/* Card 1 */}
         <motion.div variants={cardVariants}>
           <Card
             number={"1."}
@@ -54,6 +57,8 @@ function Banner() {
             }
           />
         </motion.div>
+
+        {/* Card 2 */}
         <motion.div variants={cardVariants}>
           <Card
             number={"2."}
@@ -63,6 +68,8 @@ function Banner() {
             }
           />
         </motion.div>
+
+        {/* Card 3 */}
         <motion.div variants={cardVariants}>
           <Card
             number={"3."}

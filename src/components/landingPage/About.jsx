@@ -21,32 +21,32 @@ function About() {
   return (
     <div
       ref={sectionRef}
-      className="w-full h-1/3 pt-16 pb-10 flex gap-24 flex-row justify-between border-b-2 border-chgrey"
+      className="w-full py-10 flex flex-col md:flex-row md:gap-24 justify-between items-center border-b-2 border-chgrey"
     >
       {/* Text Section */}
       <motion.div
-        className="w-1/2 p-20 px-1"
+        className="w-full md:w-1/2 p-4 md:p-20"
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
         variants={textVariant}
       >
-        <span className="text-5xl font-quick font-bold">
+        <span className="text-4xl md:text-7xl text-left font-bnt block">
           WHAT IS HOBBYHIVE?
         </span>
-        <p className="text-2xl mt-6 font-pop">
+        <p className="text-lg md:text-2xl mt-4 md:ml-2 md:mt-6 font-pop text-left">
           HobbyHive is the ultimate platform for hobby enthusiasts. From crafting to gaming, join communities tailored to your interests and connect with others who share your passion.
         </p>
       </motion.div>
 
       {/* Image Section */}
       <motion.div
-        className="w-1/2 h-auto"
+        className="w-full md:w-1/2 flex justify-center items-center"
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
         variants={imageVariant}
       >
-        <div className="w-2/3 h-2/3 scale-110 mb-8">
-          <img src={banner} alt="Banner" />
+        <div className="w-3/4 h-auto md:w-2/3 md:h-2/3 scale-110">
+          <img src={banner} alt="Banner" className="w-full h-full object-contain" />
         </div>
       </motion.div>
     </div>

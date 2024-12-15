@@ -30,12 +30,12 @@ function Featured() {
   };
 
   return (
-    <div ref={sectionRef}>
-      <div className="border-b-2 border-chgrey pb-24">
-        <div className="w-full h-auto flex flex-col items-center justify-center">
+    <div ref={sectionRef} className="px-4 md:px-10">
+      <div className="border-b-2 border-chgrey pb-16 md:pb-24">
+        <div className="w-full h-auto flex flex-col items-center justify-center text-center">
           {/* Featured Text with Animation */}
           <motion.div
-            className="font-quick font-bold pt-20 text-5xl mb-8"
+            className="font-bnt text-5xl md:text-7xl pt-10 md:pt-20 mb-4"
             variants={titleVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
@@ -44,7 +44,7 @@ function Featured() {
           </motion.div>
 
           <motion.div
-            className="font-pop text-2xl mb-6"
+            className="font-pop text-lg md:text-2xl mb-12 px-0 md:px-2"
             variants={descriptionVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
@@ -55,7 +55,7 @@ function Featured() {
         
         {/* Images with Animation */}
         <motion.div
-          className="grid grid-cols-3 gap-10"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10"
           variants={imageVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
@@ -73,7 +73,7 @@ function Featured() {
 
         {/* "View All Hobbies" link with animation */}
         <motion.div
-          className="font-pop flex text-xl w-full justify-end pr-5 pt-2"
+          className="font-pop flex text-lg md:text-xl w-full justify-center md:justify-end pr-0 md:pr-5 pt-6"
           variants={linkVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
