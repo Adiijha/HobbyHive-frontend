@@ -31,20 +31,20 @@ function Featured() {
 
   return (
     <div ref={sectionRef}>
-      <div className="border-b-2 border-chgrey pb-20">
+      <div className="border-b-2 border-chgrey pb-24">
         <div className="w-full h-auto flex flex-col items-center justify-center">
           {/* Featured Text with Animation */}
           <motion.div
-            className="font-awe font-semibold pt-10 text-5xl mb-4"
+            className="font-quick font-bold pt-20 text-5xl mb-8"
             variants={titleVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
           >
-            Featured
+            FEATURED
           </motion.div>
 
           <motion.div
-            className="font-awe text-3xl mb-8"
+            className="font-pop text-2xl mb-6"
             variants={descriptionVariants}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
@@ -73,7 +73,7 @@ function Featured() {
 
         {/* "View All Hobbies" link with animation */}
         <motion.div
-          className="font-awe flex text-2xl w-full justify-end pr-5 pt-2"
+          className="font-pop flex text-xl w-full justify-end pr-5 pt-2"
           variants={linkVariants}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}

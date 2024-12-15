@@ -25,15 +25,15 @@ function About() {
     >
       {/* Text Section */}
       <motion.div
-        className="w-1/2 p-20"
+        className="w-1/2 p-20 px-1"
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
         variants={textVariant}
       >
-        <span className="text-6xl font-awe font-semibold">
-          What is HobbyHive?
+        <span className="text-5xl font-quick font-bold">
+          WHAT IS HOBBYHIVE?
         </span>
-        <p className="text-2xl mt-6 font-awe">
+        <p className="text-2xl mt-6 font-pop">
           HobbyHive is the ultimate platform for hobby enthusiasts. From crafting to gaming, join communities tailored to your interests and connect with others who share your passion.
         </p>
       </motion.div>

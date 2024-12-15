@@ -31,12 +31,12 @@ function Banner() {
       className="w-full h-auto mt-7 p-10 border-b-2 border-chgrey"
     >
       <motion.div
-        className="text-5xl font-awe font-semibold"
+        className="text-5xl font-quick font-bold"
         variants={titleVariants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
       >
-        Why Choose HobbyHive?
+        WHY CHOOSE HOBBYHIVE?
       </motion.div>
       
       <motion.div

@@ -11,6 +11,8 @@ export default {
         'mon' : ['Monigue', 'monigue'],
         'awe' : ['Awesome', 'awesome'],
         'mons' : ['Montserrat', 'montserrat'],
+        'pop' : ['Poppins', 'poppins'],
+        'quick' : ['Quicksand', 'quicksand'],
       },
       colors:{
         'somig':'#ADE8E6',
@@ -33,10 +35,15 @@ export default {
           '0%': { transform: 'translateX(100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        borderRun: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '100%': { backgroundPosition: '100% 50%' },
+        },
       },
       animation: {
         slideInLeft: 'slideInLeft 2s ease-out',
         slideInRight: 'slideInRight 2s ease-out',
+        border: 'border-run 2s linear infinite',
       },
     },
   },
