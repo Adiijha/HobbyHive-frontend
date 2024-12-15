@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
-    <div className="w-full h-auto bg-gradient-to-r from-somig to-beige pt-12 md:pt-28 px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col items-center text-center">
+    <div className=" w-full h-auto bg-gradient-to-r from-somig to-beige pt-12 md:pt-28 px-6 sm:px-10 md:px-16 lg:px-20 flex flex-col items-center text-center">
       {/* Hero Content Section */}
       <motion.div className="w-full min-h-[70vh] md:min-h-screen text-black border-b-2 border-chgrey flex flex-col items-center">
         {/* Animated Heading */}
@@ -24,7 +24,7 @@ function Hero() {
 
         {/* Divider */}
         <motion.div
-          className="w-2/3 sm:w-1/2 md:[width:1100px] h-1 md:h-1.5 rounded-3xl bg-gradient-to-r from-chgrey to-chblack mt-2 md:mt-4 mx-auto"
+          className="w-2/3 md:w-2/3 lg:[width:1100px] h-1 md:h-1.5 rounded-3xl bg-gradient-to-r from-chgrey to-chblack mt-2 md:mt-4 mx-auto"
           initial={{ opacity: 0, scaleX: 0 }}
           whileInView={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 1, delay: 0.2 }}

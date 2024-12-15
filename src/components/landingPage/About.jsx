@@ -21,7 +21,7 @@ function About() {
   return (
     <div
       ref={sectionRef}
-      className="w-full py-10 flex flex-col md:flex-row md:gap-24 justify-between items-center border-b-2 border-chgrey"
+      className="overflow-x-hidden w-full py-10 flex flex-col md:flex-row md:gap-24 justify-between items-center border-b-2 border-chgrey"
     >
       {/* Text Section */}
       <motion.div

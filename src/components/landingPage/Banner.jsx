@@ -28,7 +28,7 @@ function Banner() {
   return (
     <div
       ref={sectionRef}
-      className="w-full h-auto mt-7 px-4 md:px-10 py-4 md:py-10 border-b-2 border-chgrey"
+      className="w-full h-auto mt-7 px-4 md:px-10 py-4 md:py-10 border-b-2 border-chgrey overflow-x-hidden"
     >
       {/* Heading Section */}
       <motion.div
@@ -42,7 +42,7 @@ function Banner() {
 
       {/* Cards Section */}
       <motion.div
-        className="flex flex-col md:flex-row gap-8 md:gap-20"
+        className="flex flex-col lg:flex-row gap-8 md:gap-20"
         variants={cardContainerVariants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
