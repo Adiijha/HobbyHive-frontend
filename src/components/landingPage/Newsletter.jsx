@@ -44,7 +44,7 @@ function Newsletter() {
           viewport={{ once: false }}
         >
           <form className="flex flex-col w-full items-center justify-center">
-            <div className="flex flex-col sm:flex-row lg:flex-row w-72 md:w-96 gap-y-4 sm:gap-x-4 sm:gap-y-0">
+            <div className="flex flex-col sm:flex-row lg:flex-row w-72 md:w-full gap-y-4 sm:gap-x-4 sm:gap-y-0">
               <label htmlFor="email-address" className="sr-only">Email address</label>
               <input
                 id="email-address"
@@ -52,7 +52,7 @@ function Newsletter() {
                 type="email"
                 autoComplete="email"
                 required
-                className="bg-grey font-pop w-full md: sm:w-96 rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset sm:text-xl sm:leading-6 placeholder:text-gray-600"
+                className="bg-grey font-pop w-full pl-20 sm:w-[450px] md:w-[600px] lg:w-[650px] rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset sm:text-xl sm:leading-6 placeholder:text-gray-600"
                 placeholder="Enter your email"
               />
               <button

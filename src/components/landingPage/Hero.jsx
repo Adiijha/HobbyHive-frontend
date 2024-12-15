@@ -24,7 +24,7 @@ function Hero() {
 
         {/* Divider */}
         <motion.div
-          className="w-2/3 md:w-2/3 lg:[width:1100px] h-1 md:h-1.5 rounded-3xl bg-gradient-to-r from-chgrey to-chblack mt-2 md:mt-4 mx-auto"
+          className="w-2/3 md:w-2/3 lg:[width:1100px] h-1 md:h-1.5 rounded-3xl bg-gradient-to-r from-chgrey to-chblack mt-2 md:mt-2 mx-auto"
           initial={{ opacity: 0, scaleX: 0 }}
           whileInView={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 1, delay: 0.2 }}

@@ -36,7 +36,7 @@
     overflow-x: hidden;
   }
   /* Style for the link */
-.group {
+.underline {
   position: relative;
   display: inline-block;
   color: #000; /* Adjust text color */
@@ -45,7 +45,7 @@
 }
 
 /* Underline animation on hover */
-.group::after {
+.underline::after {
   content: '';
   position: absolute;
   width: 0;
@@ -57,7 +57,7 @@
 }
 
 /* On hover, expand the line */
-.group:hover::after {
+.underline:hover::after {
   width: 100%;
 }
 @keyframes running-border {
@@ -87,5 +87,30 @@ button:hover .animate-running-border {
   opacity: 1;
 }
 
+  /* Style for the link */
+  .short-underline {
+    position: relative;
+    display: inline-block;
+    color: #000; /* Adjust text color */
+    text-decoration: none;
+    padding-bottom: 2px; /* Space for the line */
+  }
+  
+  /* Underline animation on hover */
+  .short-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px; /* Line thickness */
+    background-color: black; /* Line color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Smooth animation */
+  }
+  
+  /* On hover, expand the line */
+  .short-underline:hover::after {
+    width: 100%;
+  }
 
   

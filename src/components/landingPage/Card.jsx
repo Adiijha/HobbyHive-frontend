@@ -1,15 +1,16 @@
 import React from 'react';
-import dummy from '../../assets/dummy.png';
 
-function Card({ number, heading, description }) {
+
+
+function Card({ img, number, heading, description }) {
   return (
     <> 
       <div className="w-full flex flex-col items-center sm:items-start mt-8 sm:mt-16">
         {/* Image */}
         <div className="w-full sm:w-auto">
           <img 
-            src={dummy} 
-            className="h-40 sm:h-52 w-full sm:w-auto rounded-3xl mb-2" 
+            src={img} 
+            className="h-40 sm:h-52 w-full sm:w-auto rounded-3xl mb-2 border-2 border-gray-400" 
             alt="Card Thumbnail" 
           />
         </div>

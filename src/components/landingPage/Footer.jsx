@@ -18,10 +18,10 @@ function Footer() {
           <div className="w-full sm:w-1/3 mb-6 sm:mb-0">
             <h2 className="text-xl font-bold mb-2">Quick Links</h2>
             <ul className="text-md space-y-2">
-              <li><a href="#" className="hover:underline font-semibold">Home</a></li>
-              <li><a href="#" className="hover:underline font-semibold">Privacy Policy</a></li>
-              <li><a href="#" className="hover:underline font-semibold">Terms & Conditions</a></li>
-              <li><a href="#" className="hover:underline font-semibold">FAQ</a></li>
+              <li><a href="#" className="short-underline font-semibold">Home</a></li>
+              <li><a href="#" className="short-underline font-semibold">Privacy Policy</a></li>
+              <li><a href="#" className="short-underline font-semibold">Terms & Conditions</a></li>
+              <li><a href="#" className="short-underline font-semibold">FAQ</a></li>
             </ul>
           </div>
 
@@ -29,12 +29,13 @@ function Footer() {
           <div className="w-full sm:w-1/3">
             <h2 className="text-xl font-bold mb-2">Contact Us</h2>
             <p className="text-md font-semibold">
-              Email: <a href="mailto:info@company.com" className="hover:underline text-md font-semibold">contactus@hobbyhive.com</a>
+              Email: <a href="mailto:info@company.com" className="short-underline text-md font-semibold">contactus@hobbyhive.com</a>
             </p>
             <p className="text-md font-semibold">Phone: +91 9876543210</p>
             <p className="text-md font-semibold">Address: New Delhi, India</p>
+
             {/* Social Media Icons */}
-            <div className="flex justify-start gap-4 mt-6 sm:mt-0">
+            <div className="flex justify-start gap-4 mt-6 sm:mt-2">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <button className="w-10 h-10 sm:w-12 sm:h-12 bg-somig text-black border-2 border-chgrey hover:text-white rounded-full flex items-center justify-center hover:bg-blue-600 hover:border-0 transition duration-300">
                   <FaFacebook size="1.5rem" />

@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion, useInView } from 'framer-motion';
 import '../../index.css';
-import dummy from '../../assets/dummy.png';
 import { Link } from 'react-router-dom';
+import dance from '../../assets/dance.png';
+import sing from '../../assets/sing.png';
+import anime from '../../assets/anime.png';
 
 function Featured() {
   const sectionRef = React.useRef(null);
@@ -60,14 +62,41 @@ function Featured() {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <motion.div>
-            <img src={dummy} className="rounded-3xl hover:scale-110 transition-transform duration-300 ease-in-out" alt="" />
+          <motion.div className="relative group">
+            <img
+              src={sing}
+              className="rounded-3xl group-hover:scale-110 transition-transform duration-300 ease-in-out"
+              alt="Sing"
+            />
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl scale-110"
+            >
+              <span className="font-pop text-xl">Singing Community</span>
+            </motion.div>
           </motion.div>
-          <motion.div>
-            <img src={dummy} className="rounded-3xl hover:scale-110 transition-transform duration-300 ease-in-out" alt="" />
+          <motion.div className="relative group">
+            <img
+              src={anime}
+              className="rounded-3xl group-hover:scale-110 transition-transform duration-300 ease-in-out"
+              alt="Anime"
+            />
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl scale-110"
+            >
+              <span className="font-pop text-xl">Anime Community </span>
+            </motion.div>
           </motion.div>
-          <motion.div>
-            <img src={dummy} className="rounded-3xl hover:scale-110 transition-transform duration-300 ease-in-out" alt="" />
+          <motion.div className="relative group">
+            <img
+              src={dance}
+              className="rounded-3xl group-hover:scale-110 transition-transform duration-300 ease-in-out"
+              alt="Dance"
+            />
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-3xl scale-110"
+            >
+              <span className="font-pop text-xl">Dance Community</span>
+            </motion.div>
           </motion.div>
         </motion.div>
 
@@ -78,7 +107,7 @@ function Featured() {
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <Link className="relative group">View All Hobbies</Link>
+          <Link className="relative underline">View All Hobbies</Link>
         </motion.div>
       </div>
     </div>

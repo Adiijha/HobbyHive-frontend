@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import Card from './Card';
+import tailored from '../../assets/tailored.png';
+import inspiring from '../../assets/inspiring.png';
+import collab from '../../assets/collab.png';
 
 function Banner() {
   const sectionRef = useRef(null);
@@ -50,6 +53,7 @@ function Banner() {
         {/* Card 1 */}
         <motion.div variants={cardVariants}>
           <Card
+            img={tailored}
             number={"1."}
             heading={"Tailored Communities"}
             description={
@@ -61,6 +65,7 @@ function Banner() {
         {/* Card 2 */}
         <motion.div variants={cardVariants}>
           <Card
+            img={inspiring}
             number={"2."}
             heading={"Inspiring Content"}
             description={
@@ -72,6 +77,7 @@ function Banner() {
         {/* Card 3 */}
         <motion.div variants={cardVariants}>
           <Card
+            img={collab}
             number={"3."}
             heading={"Collaborative Projects"}
             description={
