@@ -75,7 +75,7 @@ function SignUp() {
       const response = await verifyOTP(formData.email, otp);
 
       if (response?.message === 'User verified and confirmed successfully. You can now log in.') {
-        navigate('/dashboard');
+        navigate('/choice');
       } else {
         setError('Invalid OTP. Please try again.');
       }

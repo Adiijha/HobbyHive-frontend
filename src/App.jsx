@@ -10,7 +10,7 @@ import MainLayout from './components/layout/HeaderFooterLayout';
 import Cookies from 'js-cookie';
 import Dashboard from './components/dashboard/Dasboard';
 import AuthRoute from './components/routes/AuthRoute';
-import ProtectedRoute from './components/routes/ProtectedRoute';
+import Choice from './components/choice/Choice';
  
 
 // ScrollToTop Component
@@ -76,6 +76,17 @@ function App() {
               </AuthRoute>
             }
           />
+          <Route
+            path="/choice"
+            element={
+              <AuthRoute>
+                <NoHeaderFooterLayout>
+                  <Choice />
+                </NoHeaderFooterLayout>
+              </AuthRoute>
+            }
+          />
+          
         </Routes>
       </Router>
     </Provider>
